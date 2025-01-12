@@ -26,3 +26,6 @@ jobs:
 
       - name: Run ruff format
         run: poetry run ruff format --check
+
+      - name: Run mypy
+        run: poetry run mypy .

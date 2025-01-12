@@ -17,6 +17,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.9.1"
+mypy = "^1.14.1"
 
 
 [tool.ruff]
@@ -24,3 +25,7 @@ ruff = "^0.9.1"
 line-length = 120
 
 target-version = "py313"
+
+[tool.mypy]
+
+strict = true
