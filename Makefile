@@ -1,4 +1,4 @@
-all: check format
+all: check format check-type test
 
 check:
 	poetry run ruff check
@@ -8,3 +8,6 @@ format:
 
 check-type:
 	poetry run mypy .
+
+test:
+	poetry run pytest .

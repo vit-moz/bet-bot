@@ -18,14 +18,17 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.9.1"
 mypy = "^1.14.1"
+pytest = "^8.3.4"
 
 
 [tool.ruff]
-
 line-length = 120
 
 target-version = "py313"
 
 [tool.mypy]
-
 strict = true
+
+[tool.pytest]
+python_files = "*_test.py"
+
