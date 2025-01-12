@@ -6,3 +6,5 @@ check:
 format:
 	poetry run ruff format
 
+check-type:
+	poetry run mypy .
